@@ -20,3 +20,10 @@ Practical Spring Security, by EC-Council
     - sc4-jwt-okta-resource-server
     - sc5-reactive-resource-server
     - sc5-reactive-web-client
+
+# Postman Collections
+Import the files in /postman-collections folder to the Postman to create access token and test the APIs.
+
+- Localhost Authorization.postman_collection.json
+- Okta Authorization.postman_collection.json
+- API Test.postman_collection.json 
