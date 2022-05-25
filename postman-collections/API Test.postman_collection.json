@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "65d9a622-f4a1-4bf0-8878-3687b5f5cfcd",
+		"name": "API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProducts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{resourceServerPort}}/getProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{resourceServerPort}}",
+					"path": [
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProducts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer $TOKEN",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:{{resourceServerPort}}/updateProducts?price=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{resourceServerPort}}",
+					"path": [
+						"updateProducts"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
